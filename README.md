@@ -6,8 +6,9 @@ An end-to-end customer churn solution using the IBM Telco Customer Churn dataset
 
 ```text
 .
-├── TelcoCustomerChurn.csv
-├── TelcoCustomerChurn - Data Dictionary.csv
+├── data/
+│   ├── TelcoCustomerChurn.csv
+│   └── TelcoCustomerChurn - Data Dictionary.csv
 ├── notebook/churn_analysis.ipynb
 ├── src/churn_pipeline.py
 ├── src/train_model.py
@@ -33,7 +34,7 @@ Run from the project root:
 
 ```bash
 python3 -m src.train_model \
-  --data TelcoCustomerChurn.csv \
+  --data data/TelcoCustomerChurn.csv \
   --model model/churn_model.pkl \
   --reports reports
 ```

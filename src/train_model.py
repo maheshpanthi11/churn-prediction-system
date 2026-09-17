@@ -104,7 +104,7 @@ def train(dataset_path: Path, model_path: Path, reports_path: Path) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Train the Telco churn decision-tree pipeline")
-    parser.add_argument("--data", type=Path, default=Path("TelcoCustomerChurn.csv"))
+    parser.add_argument("--data", type=Path, default=Path("data/TelcoCustomerChurn.csv"))
     parser.add_argument("--model", type=Path, default=Path("model/churn_model.pkl"))
     parser.add_argument("--reports", type=Path, default=Path("reports"))
     arguments = parser.parse_args()
